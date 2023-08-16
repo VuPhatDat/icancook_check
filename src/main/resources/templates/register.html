@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ICanCook</title>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="/static/login_registration.css">
+    </head>
+    <body style="background-image: url(/images/dessert1.png); background-repeat: no-repeat;">
+        <header >
+            <a href="#" class="logo"><i class="fas fa-utensils"></i> ICanCook.</a>
+            <div>REGISTRATION</div>
+            <a href="#" class="help">DO YOU NEED TO HELP?</a>
+        </header>
+        <div class="form-container">
+
+        </div>
+        <section class="login-form">
+            <form th:action="@{/register/save}" method="post" th:object="${user}">
+                <div>Registration Form</div>
+                <input
+                        type="email"
+                       placeholder="   Enter Email/Phone number"
+                       name="email"
+                       id="email"
+                        th:field="*{email}"
+                />
+                <br>
+                <input
+                        type="text"
+                        placeholder="   Enter Your First Name"
+                        name="firstName"
+                        id="firstName"
+                        th:field="*{firstName}"
+                />
+                <br>
+                <input
+                        type="text"
+                        placeholder="   Enter Your Last Name"
+                        name="lastName"
+                        id="lastName"
+                        th:field="*{lastName}"
+
+                />
+                <br>
+                <input
+                        type="text"
+                        placeholder="   Enter User name"
+                        name="username"
+                        id="username"
+                        th:field="*{username}"
+                />
+                <br>
+                <input
+                        type="password"
+                        placeholder="   Enter password"
+                        name="password"
+                        th:field="*{password}"
+                />
+                <br>
+                <input style="background: orange; color: white;" type="submit" value="Sign in ">
+                <div class="login-social" >
+                    <div class="icon" >
+                        <a href="#" class="logo-social"><i class="fab fa-facebook" ></i></a>
+                        <a href="#" class="name-social">Facebook</a>
+                    </div>
+                    <div class="icon2">
+                        <a href="#" class="logo-social"><i class="fab fa-google" ></i></a>
+                        <a href="#" class="name-social">Google</a>
+                    </div> 
+                </div>
+                <div class="log-in">
+                    <div>Do you have ICanCook account before? <a th:href="@{/login}">Log in</a></div>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

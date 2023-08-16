@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ICanCook</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head> 
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i> ICanCook.</a>
+        <nav class="navbar">    
+            <a class="active" href="#home">Home</a>
+            <a clas="food" href="#Food">Food</a> 
+            <a clas="dessert" href="#Dessert">Dessert</a>
+            <a clas="souces" href="#Souces">Souces</a>
+            <a clas="drink" href="#Drink">Drink</a>
+            <a clas="contact" href="shop.html">Shop</a>
+            <a clas="contact" href="#Contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <a th:href="@{/login}" class="fas fa-user" id="menu-bars"></a>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    <form action="" id="search-form">
+        <input type="search" placeholder="Search here" name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <section class="home" id="home">
+        <div class="Tittle-home">Special food and drink today</div>
+        <div class="swiper mySwiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h3>Gỏi cuốn</h3>
+                        <p>Món ăn phổ biến ở Việt Nam, dễ làm, nguyên liệu đơn giản nhưng cần
+                            nhiều loại, là món ăn thích hợp cho bữa cơm gia đình
+                        </p>
+                        <a href="#" class="btn">Xem thêm</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-food1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h3>Bún mọc</h3>
+                        <p>Món ăn truyền thống và rất được ưa chuộng tại Việt Nam, nguyên liệu dễ 
+                            làm, dễ kiếm. Là món ăn thích hợp cho bữa sáng 
+                        </p>
+                        <a href="#" class="btn">Xem thêm</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-food2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h3>Hamberger</h3>
+                        <p>Đồ ăn fastfood rất được ưa chuộng tại phương Tây. Cần khá nhiều nguyên 
+                            liệu, nhưng dễ làm. Vì là fastfood nên chứa rất nhiều ca-lo
+                        </p>
+                        <a href="#" class="btn">Xem thêm</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-food3.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <h3>Pizza</h3>
+                        <p>Món ăn có nguồn gốc từ ý, được yêu thích ở châu Âu. Pizza
+                            có rất nhiều loại như pizza cà chua, pizza hải sản, pizza bò
+                        </p>
+                        <a href="#" class="btn">Xem thêm</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-food4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="food" id="Food">
+        <h3 class="sub-heading">Our food</h3>
+        <h1 class="heading">Popular food</h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_food1.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_food2.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_food3.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_food4.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_food5.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_food6.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_food7.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_food8.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="dessert" id="Dessert">
+        <h3 class="sub-heading">Our dessert</h3>
+        <h1 class="heading">Popular dessert</h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/dessert1.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/dessert2.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/dessert3.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/dessert4.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/dessert1.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/dessert2.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/dessert3.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/dessert4.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="souces" id="Souces">
+        <h3 class="sub-heading">Our souces</h3>
+        <h1 class="heading">Popular souces</h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_souces1.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_souces2.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_souces3.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_souces4.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_souces51.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_souces6.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_souces1.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_souces2.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="drink" id="Drink">
+        <h3 class="sub-heading">Our drink</h3>
+        <h1 class="heading">Popular drink</h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_drink1.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_drink2.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_drink3.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_drink4.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_drink5.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_drink6.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_drink1.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" class = "fas fa-heart"></a>
+                <a href="#" class = "fas fa-shopping-cart"></a>
+                <img src = "images/popular_drink2.png" alt="">
+                <h3>Tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="check-in">
+                    <p>$15.46</p>
+                    <a href="#" class="btn">Learn to cook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="contact" id="Contact">
+        <h3 class="sub-heading">About Us</h3>
+        <h1 class="heading">Why choose us</h1>  
+        <div class="row">
+            <div class="image">
+                <img src="images/home-food1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Best food in the country</h3>
+                <p>ICanCook là nơi bạn có thể học nấu những món ăn, nước uống, sốt và cả món tráng mà bạn mong muốn
+                hoàn toàn miễn phí, ngoài việc hướng dẫn bằng những dòng văn bản, chúng tôi
+                còn đem đến cho bạn cách tiếp cận hoàn toàn mới đến việc học nấu đồ ăn qua những
+                video 
+                </p>
+                <p>Với ICanCook, không chỉ là nơi bạn có thể học nấu ăn, bạn cũng có thể mua
+                những gia vị, nguyên liệu hay đồ phụ trợ cho việc nấu. Thậm chí, bạn còn
+                có thể mua những món ăn về để trải nghiệm, rồi quyết định xem có nên học
+                nấu món đó hay không
+                </p>
+                <div class="icons-container">
+                    <div class="icon">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Easy payments</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Customer Care</h3>
+                <a href="#">Trung tâm trợ giúp</a>
+                <a href="#">Hướng dẫn mua hàng</a>
+                <a href="#">Hướng dẫn xem cách nấu ăn</a>
+                <a href="#">Thanh toán</a>
+                <a href="#">Vận chuyển</a>
+                <a href="#">Trả hàng và hoàn tiền</a>
+                <a href="#">Chăm sóc khách hàng</a>
+                <a href="#">Chính sách bảo hành</a>
+            </div>
+            <div class="box" >
+                <h3>About ICanCook</h3>
+                <a href="#">Giới thiệu về ICanCook</a>
+                <a href="#">Tuyển dụng</a>
+                <a href="#">Điều khoản ICanCook</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Kênh đăng tải</a>
+                <a href="#">Đối tác ICanCook</a>
+                <a href="#">Liên hệ truyền thông</a>
+            </div>
+            <div class="box">
+                <div class="pay">
+                    <h3>Payments</h3>
+                    <div class="icon-pay">
+                        <i class="fab fa-cc-mastercard" style="color: black"></i>
+                        <i class="fab fa-cc-visa" style="color: #4040b0" ></i>
+                        <i class="fab fa-cc-paypal" style="color: #4040b0"></i>
+                    </div>
+                    <div class="icon-pay">
+                        <i class="fab fa-cc-paypal" style="color: #4040b0"></i>
+                        <i class="fab fa-cc-amex" style="color: #409db8"></i>
+                        <i class="fab fa-cc-mastercard" style="color: black"></i>
+                    </div>
+                </div>
+                <div class="ship">
+                    <h3>Shipping Unit</h3>
+                    <div class="icon-pay">
+                        <i class="fab fa-cc-mastercard" style="color: black"></i>
+                        <i class="fab fa-cc-visa" style="color: #4040b0" ></i>
+                        <i class="fab fa-cc-paypal" style="color: #4040b0"></i>
+                    </div>
+                    <div class="icon-pay">
+                        <i class="fab fa-cc-paypal" style="color: #4040b0"></i>
+                        <i class="fab fa-cc-amex" style="color: #409db8"></i>
+                        <i class="fab fa-cc-mastercard" style="color: black"></i>
+                    </div>
+                    <div class="icon-pay">
+                        <i class="fab fa-cc-paypal" style="color: #4747cb"></i>
+                        <i class="fab fa-cc-amex" style="color: #409db8"></i>
+                        <i class="fab fa-cc-mastercard" style="color: black"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <div class="icon-follow">
+                    <i class="fab fa-facebook-f"></i>
+                    <a href="#" >Facebook</a>
+                </div>
+                <div class="icon-follow">
+                    <i class="fab fa-twitter"></i>
+                    <a href="#">Twiter</a>
+                </div>
+                <div class="icon-follow">
+                    <i class="fab fa-instagram"></i>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="icon-follow">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="#">Linkedin</a>
+                </div>
+            </div>
+        </div>
+        <div class="credit">copyright @ 2023 by<span> Vu Phat Dat</span></div>
+    </section>
+</body>
+</html>

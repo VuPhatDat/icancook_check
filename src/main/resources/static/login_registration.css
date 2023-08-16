@@ -1,0 +1,168 @@
+@import url('https://fonts.googleappis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --orange: #e39010;
+  --green:  #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 7rem;
+    background: #fff;
+    padding: 1rem 7%;
+    display:flex;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+  }
+  
+  header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+  header .logo i{
+    color: var(--orange);
+  }
+
+header div{
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+header .help{
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+    color: var(--black);
+}
+header .help:hover{
+    color: var(--orange);
+}
+
+
+.login-form{
+    width: 50rem;
+    height: auto;
+    background: #fff;
+    margin-left: 80rem;
+    margin-top: 15rem;
+    box-shadow: var(--box-shadow);
+}
+.login-form div{
+    font-size: 4rem;
+    padding:2rem 0rem;
+    text-align: center;
+    color: var(--orange);
+}
+
+.login-form input{
+    margin: 1.5rem 7rem;
+    width: 34rem;
+    height: 4rem;
+    border: 1px solid var(--black);
+    display: inline-block;
+    box-sizing: border-box;
+}
+.login-form .support{
+    font-size: 1rem;
+}
+.login-form .support .sms{
+    padding-left: 15rem;
+}
+.login-form a:hover{
+    color: var(--orange);
+
+}
+.login-form .login-social{
+    display: flex;
+    padding:1rem 0;
+    gap: 1rem;
+}
+
+.login-form .login-social .icon{
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2) ;
+    flex: 0.37 ;
+    padding: 1.5rem .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 7rem;
+}
+
+.login-form .login-social .icon .logo-social{
+    font-size: 1.5rem;
+    color: var(--orange)
+}
+.login-form .login-social .icon .name-social{
+    font-size: 1.5rem;
+    color: var(--black)
+}
+.login-form .login-social .icon2{
+  background: #eee;
+  border-radius: .5rem;
+  border: .1rem solid rgba(0,0,0,.2) ;
+  flex: 0.4 ;
+  padding: 1.5rem .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.login-form .login-social .icon2 .logo-social{
+  font-size: 1.5rem;
+  color: var(--orange)
+}
+.login-form .login-social .icon2 .name-social{
+  font-size: 1.5rem;
+  color: var(--black)
+}
+
+.login-form .sign-in{
+  padding: 1.5rem 7rem;
+}
+
+.login-form .sign-in div{
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.login-form .sign-in a{
+  color: var(--orange);
+}
+
+.login-form .log-in{
+  padding: 1.5rem 7rem;
+}
+
+.login-form .log-in div{
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.login-form .log-in a{
+  color: var(--orange);
+}
